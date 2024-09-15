@@ -38,7 +38,7 @@ const EditForm = () => {
             <button type="button" >수정(전송)</button>
 
             <br /> <br />
-            <Link to="" rel="noreferrer noopener">
+            <Link to="http://localhost:3000/list" rel="noreferrer noopener">
                 리스트로 가기
             </Link>
 

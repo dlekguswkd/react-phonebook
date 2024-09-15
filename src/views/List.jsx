@@ -39,7 +39,7 @@ const List = () => {
                     </tr>
                     <tr>
                         <th>
-                            <Link to="" rel="noreferrer noopener">
+                            <Link to="http://localhost:3000/editform" rel="noreferrer noopener">
                                 [수정폼으로 이동]
                             </Link>
                         </th>
@@ -52,7 +52,7 @@ const List = () => {
                 </tbody>
             </table>
             <br />
-            <Link to="" rel="noreferrer noopener">
+            <Link to="http://localhost:3000/writeform" rel="noreferrer noopener">
                 등록폼으로 이동
             </Link>
                 
