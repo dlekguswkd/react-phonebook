@@ -24,7 +24,6 @@ const WriteForm = () => {
             <h2>전화번호-등록폼</h2>
 
             <p>아래의 항목을 입력한 후 등록버튼을 클릭해 주세요</p>
-            <br />
         
             <label htmlFor="txt-name">이름(name):</label> 
             <input id="txt-name" type="text" name="" value="" placeholder="이름" />
@@ -46,7 +45,7 @@ const WriteForm = () => {
             <button type="submit">등록(전송)</button>
 
 
-            <br /><br />
+            <br /><br /><br />
             <Link to="http://localhost:3000/list" rel="noreferrer noopener">
                 리스트로 가기
             </Link>

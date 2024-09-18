@@ -22,7 +22,7 @@ const EditForm = () => {
             <h1>전화번호부</h1>
             <h2>전화번호-수정폼</h2>
             <p>수정할 항목을 입력한 후 수정버튼을 클릭해 주세요</p>
-            <br />
+            
             <label htmlFor="txt-name">이름(name): </label>
             <input id="txt-name" type="text" name="" value="" placeholder="이름" />
             <br />
@@ -32,7 +32,7 @@ const EditForm = () => {
             <label htmlFor="txt-company">회사(company): </label>
             <input id="txt-company" type="text" name="" value="" placeholder="회사" />
             <br />
-            <input id="" type="text" name="" value="" placeholder="" />
+            <input id="" type="text" name="" value="update" placeholder="" />
             <input id="" type="text" name="" value="" placeholder="" />
             <br />
             <button type="button" >수정(전송)</button>
