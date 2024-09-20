@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import List from './views/List';
-import EditForm from './views/EditForm';
-import WriteForm from './views/WriteForm';
+import List from './pages/List.jsx';
+import EditForm from './pages/EditForm';
+import WriteForm from './pages/WriteForm';
 
 function App() {
   return (
