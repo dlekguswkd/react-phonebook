@@ -72,7 +72,7 @@ const WriteForm = () => {
             console.log(response); //수신데이타
             console.log(response.data); //수신데이타
 
-            if (response.data === 1) {
+            if (response.data.result ==='success') {
                 // 리다이렉트
                 navigate("/list");
             
