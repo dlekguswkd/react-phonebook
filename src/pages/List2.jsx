@@ -9,7 +9,7 @@ import axios from 'axios';
 //import css
 
 
-const List = () => {
+const List2 = () => {
     
     /*
     // 리다이렉트 안됨 (같은페이지의 리다이렉트는 안됨)
@@ -58,7 +58,7 @@ const List = () => {
         // 서버로 데이터 전송
         axios({
             method: 'delete',       // put, post, delete
-            url: 'http://localhost:9000/api/persons/'+no,
+            url: `http://localhost:9000/api/persons/${no}`,
 
             responseType: 'json' //수신타입 받을때
         }).then(response => {
@@ -75,8 +75,25 @@ const List = () => {
                 navigate("/list");  // 자기페이지로는 리다이랙트 안됨!(새로고침 불가능)
                 */
                 // 리다이렉트 대신 이걸 해주는거임 삭제하고난후 삭제된것을 제외하고 리스트 뿌려주기
-                getPersonList();    // 만들어놨던 일반메소드 다시 호출
+                // getPersonList();    // 만들어놨던 일반메소드 다시 호출
                                     // 다시 처음처럼 불러오는거임 처음부터 삭제된것만 빼고 다시 호출하는(그리는) 개념
+
+                // 우리가 가지고 있는 리스트(배열) personList에서 방금 삭제한 값만 제거된 새로운 배열
+                let newArray = personList.filter((person)=>{
+                    return person.personId !== no;
+                });
+                // let newArray = personList.filter((person)=>(person.personId !== no));
+
+                setPersonList(newArray);
+
+                /*
+                setPersonList((newArray)=>{     // 이전값 확실히 주세요 preList
+                    prevList.filter((person)=>{
+                        return person.personId !== no;     // no 인 애만 삭제하고 나머지는 다시 담아줘
+                    });
+                });
+                */
+
 
             }else {
                 alert(response.data.message);       // "해당번호가 없습니다."
@@ -117,7 +134,7 @@ const List = () => {
                                 </tr>
                                 <tr>
                                     <th>
-                                        <Link to={'/editform/'+ personVo.personId} rel="noreferrer noopener">
+                                        <Link to={`/editform/${personVo.personId}`} rel="noreferrer noopener">
                                             [수정폼으로 이동]
                                         </Link>
                                     </th>
@@ -141,4 +158,4 @@ const List = () => {
     );
 }
 
-export default List;
+export default List2;
