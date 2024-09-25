@@ -104,7 +104,7 @@ const EditForm = () => {
 
             if(response.data.result === 'success') {
                 // 성공로직
-                navigate("/list");
+                navigate("/");
 
             }else {
                 // 실패로직
@@ -145,7 +145,7 @@ const EditForm = () => {
             </form>
 
             <br /> <br />
-            <Link to="/list" rel="noreferrer noopener">리스트로 가기</Link>
+            <Link to="/" rel="noreferrer noopener">리스트로 가기</Link>
 
         </>
     );

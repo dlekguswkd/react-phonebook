@@ -74,7 +74,7 @@ const WriteForm = () => {
 
             if (response.data.result ==='success') {
                 // 리다이렉트
-                navigate("/list");
+                navigate("/");
             
             }else {
                 alert("등록실패");
@@ -123,7 +123,7 @@ const WriteForm = () => {
 
 
             <br /><br /><br />
-            <Link to="/list" rel="noreferrer noopener">
+            <Link to="/" rel="noreferrer noopener">
                 리스트로 가기
             </Link>
 

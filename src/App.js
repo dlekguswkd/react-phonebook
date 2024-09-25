@@ -12,7 +12,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           {/* 어디부터 어디까지가 여기다 하는 곳 (여러 페이지인척하지만 사실은 한페이지에 쫘라락) */}
-          <Route path='/list' element={<List />} />
+          <Route path='/' element={<List />} />
           <Route path='/writeform' element={<WriteForm />} />
           <Route path='/editform/:no' element={<EditForm />} />
           <Route path='/list2' element={<List2 />} />
